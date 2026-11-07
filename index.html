@@ -44,11 +44,12 @@
     <header class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto border-b border-zinc-800/50">
         <a href="#" class="flex items-center gap-2 font-bold text-lg tracking-wider">
             <span class="bg-rose-600 text-white px-2 py-0.5 rounded text-sm">A</span>
-            <span>Ahmed</span>
+            <span>Ahmed セカイ</span>
         </a>
 
         <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-400">
             <a href="#about" class="hover:text-white transition">About Me</a>
+            <a href="#experience" class="hover:text-white transition">Experience</a>
             <a href="#projects" class="hover:text-white transition">My Projects</a>
             <a href="#skills" class="hover:text-white transition">Skills</a>
         </nav>
@@ -62,9 +63,6 @@
             </a>
             <button aria-label="Toggle Theme" class="hover:text-white transition">
                 <i data-lucide="moon" class="w-5 h-5"></i>
-            </button>
-            <button aria-label="Select Locale" class="hover:text-white transition">
-                <i data-lucide="globe" class="w-5 h-5"></i>
             </button>
         </div>
     </header>
@@ -100,13 +98,49 @@
     <!-- About Section -->
     <section id="about" class="max-w-4xl mx-auto px-6 py-20">
         <h2 class="text-2xl font-bold mb-6 border-b border-zinc-800 pb-2">About Me</h2>
-        <h3 class="text-xl font-semibold text-rose-500 mb-4">I'm Ahmed Mohamed</h3>
+        <h3 class="text-xl font-semibold text-rose-500 mb-2">I'm Ahmed Mohamed</h3>
+        <p class="text-sm font-mono text-zinc-400 mb-6">Fullstack web engineer | UI/UX Designer</p>
         <p class="text-zinc-400 leading-relaxed mb-4">
             In 2018, I took the plunge into the world of custom Discord bots, immersing myself in the intricate realm of coding and web development. As time marched on, I found myself fortunate to craft software for a diverse array of clients.
         </p>
-        <p class="text-zinc-400 leading-relaxed">
+        <p class="text-zinc-400 leading-relaxed mb-4">
             Currently, my primary focus revolves around crafting products for clients at Mostaql. During my free time, I delve into exploring new concepts, trends, and emerging technologies.
         </p>
+        <p class="text-zinc-400 leading-relaxed">
+            When I'm not at the computer, you'll often find me immersed in music, socializing with friends, or indulging in some anime watching. It's a refreshing break from the digital world.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-bold mb-10 border-b border-zinc-800 pb-2">Experience</h2>
+        <div class="space-y-12">
+            <div class="border-l-2 border-rose-600 pl-6 relative">
+                <span class="text-xs font-mono text-rose-500 block mb-1">OCT 2024 — PRESENT</span>
+                <h3 class="text-lg font-bold text-white">Full Stack Developer · AVNOLOGY</h3>
+                <p class="text-zinc-400 text-sm mt-2 mb-4">We help with creative solutions to interactive design, development and digital marketing</p>
+                <div class="flex flex-wrap gap-2 text-xs text-zinc-300 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Node.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">React</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="border-l-2 border-zinc-800 pl-6 relative">
+                <span class="text-xs font-mono text-zinc-500 block mb-1">MAY 2020 — PRESENT</span>
+                <h3 class="text-lg font-bold text-white">Full Stack Developer / UI/UX Designer · Freelance</h3>
+                <p class="text-zinc-400 text-sm mt-2 mb-4">Web and mobile application development and design with focus on user experience</p>
+                <div class="flex flex-wrap gap-2 text-xs text-zinc-300 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">JavaScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Node.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">React</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -120,8 +154,8 @@
                 <p class="text-zinc-400 text-sm mb-4">Retrieve your high school exam results effortlessly with comprehensive performance details.</p>
                 <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
                     <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Bun</span>
                     <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
-                    <span class="bg-zinc-800 px-2 py-1 rounded">React</span>
                 </div>
             </div>
 
@@ -140,10 +174,88 @@
                 <p class="text-zinc-400 text-sm mb-4">Discord bot for community content sharing and management.</p>
                 <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
                     <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Node.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">Kaboot</h3>
+                <p class="text-zinc-400 text-sm mb-4">A redesign of an interactive learning platform, inspired by Kahoot.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Adobe XD</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">Phi Boutique</h3>
+                <p class="text-zinc-400 text-sm mb-4">Phi Boutique is a restaurant in Riyadh with modern web experience.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
                     <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
                     <span class="bg-zinc-800 px-2 py-1 rounded">React</span>
                 </div>
             </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">MH for Trading and Contracting</h3>
+                <p class="text-zinc-400 text-sm mb-4">Specializing in contracting, rehabilitation, and renovation services.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Adobe XD</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">Easy Manga</h3>
+                <p class="text-zinc-400 text-sm mb-4">Easiest way to read manga and manhwas online smoothly.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">GraphQL</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">WolfLand</h3>
+                <p class="text-zinc-400 text-sm mb-4">Enhance your experience in playing Grand Theft Auto V.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">HTML</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">CSS</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">Hnzakr Online (clone)</h3>
+                <p class="text-zinc-400 text-sm mb-4">Redesign of educational platform, reverse engineering authentication.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Tailwind CSS</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">tRPC</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-zinc-900">
+        <h2 class="text-2xl font-bold mb-10">My Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">HTML</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">CSS</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">JavaScript</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">TypeScript</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Python</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">GraphQL</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Node.js</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Bun</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">React</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Next.js</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Tailwind CSS</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">MongoDB</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">PostgreSQL</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Git / GitHub</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">VS Code</p></div>
+            <div class="bg-zinc-900/30 border border-zinc-800 p-4 rounded-lg text-center"><p class="font-bold text-white">Figma</p></div>
         </div>
     </section>
 
