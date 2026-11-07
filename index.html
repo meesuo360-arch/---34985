@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mohamed - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#09090b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #09090b;
+            color: #fafafa;
+            font-family: system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 20s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#09090b] text-zinc-100 selection:bg-rose-600 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto border-b border-zinc-800/50">
+        <a href="#" class="flex items-center gap-2 font-bold text-lg tracking-wider">
+            <span class="bg-rose-600 text-white px-2 py-0.5 rounded text-sm">A</span>
+            <span>Ahmed</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-6 text-sm text-zinc-400">
+            <a href="#about" class="hover:text-white transition">About Me</a>
+            <a href="#projects" class="hover:text-white transition">My Projects</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+        </nav>
+
+        <div class="flex items-center gap-4 text-zinc-400">
+            <a href="https://github.com" target="_blank" class="hover:text-white transition">
+                <i data-lucide="github" class="w-5 h-5"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="hover:text-white transition">
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+            </a>
+            <button aria-label="Toggle Theme" class="hover:text-white transition">
+                <i data-lucide="moon" class="w-5 h-5"></i>
+            </button>
+            <button aria-label="Select Locale" class="hover:text-white transition">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center text-center pt-24 pb-16 px-4 overflow-hidden">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl leading-tight">
+            Let's craft <span class="text-rose-600 font-serif italic mx-2">لَا تُنْسَى*</span> user experiences.
+        </h1>
+
+        <div class="flex items-center gap-4 mt-8">
+            <a href="#projects" class="bg-rose-600 hover:bg-rose-700 text-white font-medium px-6 py-3 rounded-full transition shadow-lg shadow-rose-600/20">
+                My Projects
+            </a>
+            <a href="#" class="bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-medium px-6 py-3 rounded-full transition border border-zinc-700">
+                Resume
+            </a>
+        </div>
+
+        <p class="text-xs text-zinc-500 mt-4">
+            لَا تُنْسَى* unforgettable in English
+        </p>
+
+        <!-- Ticker / Marquee -->
+        <div class="w-full overflow-hidden mt-20 border-y border-zinc-800/80 py-4 bg-zinc-950/50">
+            <div class="animate-marquee whitespace-nowrap text-zinc-600 font-mono text-lg tracking-widest">
+                <span>coding-designing-web-api &nbsp;&bull;&nbsp; coding-designing-web-api &nbsp;&bull;&nbsp; coding-designing-web-api &nbsp;&bull;&nbsp;</span>
+                <span>coding-designing-web-api &nbsp;&bull;&nbsp; coding-designing-web-api &nbsp;&bull;&nbsp; coding-designing-web-api &nbsp;&bull;&nbsp;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-bold mb-6 border-b border-zinc-800 pb-2">About Me</h2>
+        <h3 class="text-xl font-semibold text-rose-500 mb-4">I'm Ahmed Mohamed</h3>
+        <p class="text-zinc-400 leading-relaxed mb-4">
+            In 2018, I took the plunge into the world of custom Discord bots, immersing myself in the intricate realm of coding and web development. As time marched on, I found myself fortunate to craft software for a diverse array of clients.
+        </p>
+        <p class="text-zinc-400 leading-relaxed">
+            Currently, my primary focus revolves around crafting products for clients at Mostaql. During my free time, I delve into exploring new concepts, trends, and emerging technologies.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-bold mb-2">My Projects</h2>
+        <p class="text-sm text-zinc-500 mb-10">I prioritize client privacy and only showcase projects with their explicit approval</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">BlitzMarks</h3>
+                <p class="text-zinc-400 text-sm mb-4">Retrieve your high school exam results effortlessly with comprehensive performance details.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">React</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">Ugurly</h3>
+                <p class="text-zinc-400 text-sm mb-4">A URL shortener service shorten Your URL, Expand Your Possibilities.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Node.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition">
+                <h3 class="text-lg font-bold text-white mb-2">ShareMe</h3>
+                <p class="text-zinc-400 text-sm mb-4">Discord bot for community content sharing and management.</p>
+                <div class="flex flex-wrap gap-2 text-xs text-rose-400 font-mono">
+                    <span class="bg-zinc-800 px-2 py-1 rounded">TypeScript</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">Next.js</span>
+                    <span class="bg-zinc-800 px-2 py-1 rounded">React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 border-t border-zinc-900 text-sm text-zinc-600">
+        Copyright © 2026 Ahmed Mohamed. All rights reserved.
+    </footer>
+
+    <!-- Script to render icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
